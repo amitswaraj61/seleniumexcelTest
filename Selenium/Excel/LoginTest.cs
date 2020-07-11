@@ -36,7 +36,6 @@ namespace Selenium.Excel
             string pa = ExcelOperations.ReadData(1, "password");
             IWebElement pas = driver.FindElement(By.XPath("//input[contains(@id,'password')]"));
             pas.SendKeys(credentials.pass);
-        
             Thread.Sleep(3000);
             driver.Quit();
         }
